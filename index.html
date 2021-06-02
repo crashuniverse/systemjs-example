@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SystemJS example</title>
+</head>
+<body>
+<h1>A SystemJS example</h1>
+<p>this page imports lodash es6 module from web and finds unique numbers from a list of repeated numbers.</p>
+<code id="numbers"></code>
+<script src="https://cdn.jsdelivr.net/npm/systemjs@6.9.0/dist/system.js"></script>
+<script type="systemjs-importmap">
+{
+    "imports": {
+        "lodash": "https://unpkg.com/lodash@4.17.10/lodash.js"
+    }
+}
+</script>
+<script type="systemjs-module" src="app.js"></script>
+</body>
+<html>
